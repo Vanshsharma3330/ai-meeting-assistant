@@ -1,0 +1,49 @@
+AI Video Assistant With RAG
+
+WHAT THIS TOOL DOES:
+→ Takes any YouTube URL or audio/video file as input
+→ Transcribes English meetings using local Whisper AI
+→ Transcribes Hindi & Hinglish meetings using Sarvam AI
+→ Summarises the full meeting in bullet points
+→ Extracts action items with owner and deadline
+→ Extracts key decisions made in the meeting
+→ Extracts open questions and follow-ups
+→ Lets you CHAT with your meeting using RAG + ChromaDB
+→ Export full report as PDF or TXT
+
+
+TECH STACK:
+→ Python
+→ OpenAI Whisper (local, free) - for Transcription
+→ Sarvam AI (Hindi/Hinglish transcription)
+→ LangChain LCEL (modern pipeline)
+→ Mistral AI (free API) - used for Summarization, Extraction and Translation
+→ ChromaDB (vector database for RAG)
+→ HuggingFace Embeddings (local, free)
+→ Streamlit (UI) - Builds the full web UI in pure python.
+
+
+
+Overview:
+So basically. we are building a production-ready tool that transcribes the Vides, Summarises them, extract acton items and lets you chat with your meeting free.
+
+
+Problem Statement:
+Meetings are painful.
+Every professional sits through hours of meetings every week. But most of the value gets lost the moment the call ends.
+    1. No Notes Taken - Most people forget 90% of what was discussed.
+    2. Action Items Lost - Tasks assigned during meetings often go untracked.
+    3. Expnsive Tools - Tools like fireflies, Otter charge $20-$40 a month just for basic transportation andd summaries.
+
+
+
+
+
+Folder Structure:
+1.  a. Create isolated virtual environment using ('uv venv'). where I can store the models that     I can even use locally -> install it using ('pip install uv')
+    b. Check the version using -> 'python -m uv venv'
+    c. Activate the virtual environment
+
+2. Create .env file and requirement.txt and install all 
+
+(UV is faster than pip so we can use it as a package)

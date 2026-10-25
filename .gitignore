@@ -1,0 +1,38 @@
+# Virtual Environment
+.venv/
+venv/
+ENV/
+
+# Secrets & Environment Variables (NEVER commit API keys!)
+.env
+*.env
+
+# Audio Downloads & Uploads (Heavy binary files)
+downloades/
+downloads/
+temp/
+*.wav
+*.mp3
+*.mp4
+*.webm
+*.m4a
+
+# Vector Database (Local ChromaDB stores & sqlite DBs)
+chroma_db/
+*.db
+*.sqlite3
+
+# Python Cache & Bytecode
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+
+# Streamlit Local Cache
+.streamlit/
+
+# OS & Editor generated files
+.DS_Store
+Thumbs.db
+.vscode/*
+!.vscode/settings.json
